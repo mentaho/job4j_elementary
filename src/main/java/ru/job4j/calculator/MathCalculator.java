@@ -8,12 +8,12 @@ public class MathCalculator {
                 + multiply(first, second);
     }
 
-    public static double calculate1(double first, double second) {
-        return sum(subtraction(first, second), division(first, second));
+    public static double subAndDiv(double first, double second) {
+        return subtraction(first, second) + division(first, second);
     }
 
-    public static double calculate2(double first, double second) {
-        return sum(sum(sum(first, second), subtraction(first, second)), sum(multiply(first, second), division(first, second)));
+    public static double sumAll(double first, double second) {
+        return sum(first, second) + subtraction(first, second) + multiply(first, second) + division(first, second);
     }
 
     public static void main(String[] args) {
