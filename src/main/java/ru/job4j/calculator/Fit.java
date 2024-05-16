@@ -10,7 +10,6 @@ public class Fit {
     private static final short BASE_HEIGHT_WOMAN = 110;
 
     public static double manWeight(short height) {
-
         final double coefficient = 1.15;
         return (height - BASE_HEIGHT_MAN) * coefficient;
     }
